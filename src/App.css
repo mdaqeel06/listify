@@ -1,0 +1,180 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../public/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  padding: 12px 24px;
+  background: #4c585b;
+  font-size: 22px;
+  text-transform: uppercase;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  height: 92vh;
+}
+
+.boards {
+  width: 14%;
+  background: #7e99a3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.boards h4 {
+  padding: 12px;
+}
+
+.boards li {
+  list-style-type: none;
+  background: #a5bfcc;
+  padding: 6px 12px;
+}
+
+.delete-cards {
+  border: 1px dashed #36454f;
+  margin: 12px;
+  padding: 12px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 24px;
+  opacity: 1;
+  color: #36454f;
+}
+
+.delete-cards i {
+  font-size: 20px;
+  margin: 24px;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+.kanban {
+  padding: 12px;
+  display: flex;
+  column-gap: 20px;
+  align-items: flex-start;
+  width: 86%;
+  overflow-x: auto;
+}
+
+.list {
+  min-width: 250px;
+  width: 250px;
+  background: #e5e2e2;
+  padding: 12px 12px 2px 12px;
+  border-radius: 12px;
+}
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-name {
+  flex: 1;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.list-name-input {
+  font-weight: 500;
+}
+
+.list-header .fa-trash {
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+}
+
+.list-header .fa-trash:hover {
+  color: #ff033e;
+}
+
+.add-button {
+  margin-bottom: 8px;
+  font-size: 12px;
+  padding: 6px;
+  background: #f1f3f8;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.cards-container {
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.drag {
+  height: 10px;
+  width: 100%;
+}
+
+.drag-highlight {
+  height: 50px;
+  width: 100%;
+  background: #fbfbfb;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.card {
+  padding: 12px;
+  background: #fbfbfb;
+  border-radius: 12px;
+}
+
+.date {
+  font-size: 10px;
+  color: gray;
+}
+
+.card-title {
+  min-height: 18px;
+}
+
+.card-title,
+.textarea {
+  font-size: 14px;
+}
+
+.textarea {
+  resize: none;
+}
+
+.list-name-input,
+.textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* Hide scrollbar for Chrome, Edge, Safari */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* Ensures scrolling is still possible */
+.no-scrollbar {
+  overflow: auto;
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
